@@ -1,6 +1,6 @@
 document.getElementById("connect").addEventListener("click", async () => {
-  if (typeof window.kasware !== 'undefined') {
-    alert('KasWare Wallet is installed!');
+  if (typeof window.kasware === 'undefined') {
+    alert('KasWare Wallet is not installed!');
   } else {
     try {
       let accounts = await window.kasware.requestAccounts();
