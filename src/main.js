@@ -6,7 +6,7 @@ document.getElementById("connect").addEventListener("click", async () => {
       let accounts = await window.kasware.requestAccounts();
       console.log('connect success', accounts);
     } catch (e) {
-      console.log('connect failed');
+      console.log('connect failed', e);
     }
   }
 })
